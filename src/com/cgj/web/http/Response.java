@@ -29,7 +29,8 @@ public class Response {
 	 * ��ȡ��Ӧͷ
 	 * @throws IOException
 	 */
-	public void readResponse() throws IOException {
+	@SuppressWarnings("deprecation")
+    public void readResponse() throws IOException {
 		boolean keepALive = true;
 		try {
 			statusLine = dis.readLine();
